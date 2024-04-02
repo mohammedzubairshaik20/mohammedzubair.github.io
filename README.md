@@ -26,7 +26,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 MIT License
 
-Copyright (c) 2024 [MohammedZubairShaik]
+Copyright (c) 2024 - MohammedZubairShaik
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,5 +48,5 @@ SOFTWARE.
 
 ## Contact
 
-Your Name - [LinkedIn Profile](https://www.linkedin.com/in/mohammedzubairshaik)
+MohammedZubairShaik - [LinkedIn Profile](https://www.linkedin.com/in/mohammedzubairshaik)
 
