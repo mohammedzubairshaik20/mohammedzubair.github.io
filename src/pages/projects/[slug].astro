@@ -1,0 +1,48 @@
+---
+import { readOne, readAll } from "../../lib/markdoc/read";
+import { project as projectFrontmatterSchema } from "../../lib/markdoc/frontmatter.schema";
+import Renderer from "../../components/Renderer.astro";
+import ProjectMeta from "../../components/PageMeta.astro";
+import ContentLayout from "../../layouts/ContentLayout.astro";
+import { SITE_URL } from "../../config";
+
+export async function getStaticPaths() {
+  const projects = await readAll({
+    directory: "projects",
+    frontmatterSchema: projectFrontmatterSchema,
+  });
+
+  return projects
+    .filter((p) => !p.frontmatter.draft)
+    .map((project) => ({
+      params: { slug: project.slug },
+    }));
+}
+
+const { slug } = Astro.params;
+if (typeof slug !== "string") {
+  throw new Error(`Expected slug to be a string, received: ${typeof slug}`);
+}
+
+const { content, frontmatter } = await readOne({
+  directory: "projects",
+  slug,
+  frontmatterSchema: projectFrontmatterSchema,
+});
+
+const ogImageAbsoluteUrl = frontmatter.ogImagePath
+  ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
+  : undefined;
+---
+
+<ContentLayout title={frontmatter.title} date={frontmatter.date}>
+  <ProjectMeta
+    title={frontmatter.title}
+    description={frontmatter.description}
+    publishDate={frontmatter.date.toISOString()}
+    pagePath={`/projects/${slug}`}
+    ogImageAbsoluteUrl={ogImageAbsoluteUrl}
+    slot="meta"
+  />
+  <Renderer content={content} slot="content" />
+</ContentLayout>
