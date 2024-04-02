@@ -1,50 +1,52 @@
-# Blogster
+# Portfolio Website
 
-Theme: **bubblegum**
+🚀 Welcome to my personal portfolio website! Built using Astro, Tailwind CSS, and Markdown, this site showcases my projects, skills, and experiences as a Data Science and Analytics enthusiast.
 
-Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
+## Features
 
-Check out the demo here - [Blogster bubblegum template](https://blogster-bubblegum.netlify.app).
+- 📚 **Astro**: For an efficient, modern web development experience.
+- 💅 **Tailwind CSS**: For responsive, customizable design.
+- 📝 **Markdown**: Content written in Markdown for easy updates.
 
-## Bubblegum Template
+## Usage
 
-A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
+Explore my projects and blog posts to learn more about my journey and skills in Data Science and Analytics. This website serves as a dynamic representation of my professional and personal development.
 
-- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
-- **Dark mode**. All themes have light/dark mode built-in.
-- **Mobile first**. Responsive and loads fast in all devices.
-- **Accessible**. A well thought out semantic and accessible content.
-- **Perfect lighthouse score.** 100 across the board.
-- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
-- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
-- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
-- **SEO**. All pages are setup with all the SEO you might need.
+## Contributing
 
-## How do I add content?
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
-
-1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
-2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
-
-## How do I make it my blog?
-
-Easy.
-
-- All content is static and everything is straight forward. Change whatever you need to change.
-- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
-- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
-
-## How do I deploy?
-
-`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
-
-## Credit
-
-Thanks to other templates that inspired this theme.
-
-- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
+MIT License
+
+Copyright (c) 2024 [MohammedZubairShaik]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Contact
+
+Your Name - [LinkedIn Profile](https://www.linkedin.com/in/mohammedzubairshaik)
+
